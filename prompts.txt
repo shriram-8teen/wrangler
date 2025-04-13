@@ -13,7 +13,34 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-Used AI tools to assist in:
-- Generating grammar for BYTE_SIZE and TIME_DURATION tokens
-- Implementing ByteSize.java and TimeDuration.java parsing logic
-- Drafting AggregateStats.java directive and test class
+Below is a list of AI prompts used during the development of this project:
+
+Prompt 1:
+"Generate ANTLR grammar rules for parsing byte sizes like '1GB', '512 MB', '2kb', supporting units like KB, MB, GB, TB."
+
+Prompt 2:
+"Generate ANTLR grammar rules to parse time durations like '1h 30m', '2d', '45s', supporting multiple units."
+
+Prompt 3:
+"Implement a Java class (ByteSize.java) that parses strings like '1GB', '1024MB', and returns the value in bytes."
+
+Prompt 4:
+"Implement a Java class (TimeDuration.java) that parses strings like '2h 30m', '1d', and returns duration in seconds."
+
+Prompt 5:
+"Write unit tests in JUnit for ByteSize.java to cover valid inputs, invalid inputs, and edge cases."
+
+Prompt 6:
+"Write unit tests in JUnit for TimeDuration.java to verify parsing logic and edge cases."
+
+Prompt 7:
+"Draft a directive class in Java to compute aggregate statistics (sum, average, count) over input values."
+
+Prompt 8:
+"Suggest a clean design for the AggregateStats directive and help with writing test cases for it."
+
+Prompt 9:
+"Review and optimize ByteSize.java and TimeDuration.java to improve error handling and input validation."
+
+Prompt 10:
+"Generate a clear README.md that explains how to build, run, and test the Wrangler enhancement project."
