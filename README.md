@@ -216,3 +216,22 @@ Cask is a trademark of Cask Data, Inc. All rights reserved.
 
 Apache, Apache HBase, and HBase are trademarks of The Apache Software Foundation. Used with
 permission. No endorsement by The Apache Software Foundation is implied by the use of these marks.
+
+---
+
+##  New Feature: ByteSize & TimeDuration Support
+
+Wrangler now supports native parsing of size and time units directly in recipes.
+
+### 🔹 Supported Formats
+
+- **ByteSize**: `10KB`, `1.5MB`, `2GB`, `500B`
+- **TimeDuration**: `150ms`, `2.1s`, `3min`, `1h`
+
+### 🔹 Example Usage
+
+You can now use a new directive `aggregate-stats`:
+
+```wrangler
+aggregate-stats :data_transfer_size :response_time total_size_mb total_time_sec
+
